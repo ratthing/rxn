@@ -5,8 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.15">
-<title>IBM RXN for Chemistry - Quick start</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<title>RXN for Chemistry - Quick start</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment @import statement to use as custom stylesheet */
@@ -47,7 +46,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 *,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -433,40 +432,36 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer{background:none}
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="article">
 <div id="header">
+<h1>RXN for Chemistry - Quick start</h1>
 </div>
 <div id="content">
 <div class="paragraph">
-<p><a href="./index.html"><span class="image"><img src="./images/return.png" alt="image"></span></a></p>
-</div>
-<div class="sect1">
-<h2 id="ibm-rxn-for-chemistry---quick-start">IBM RXN for Chemistry - Quick start</h2>
-<div class="sectionbody">
-<div id="preamble" class="paragraph">
-<p>IBM RXN for Chemistry</p>
+<p>RXN for Chemistry</p>
 </div>
 <div class="paragraph">
-<p>This guide is a short tutorial to quickly familiarize yourself with the user interface of IBM RXN for Chemistry.</p>
+<p>This guide is a short tutorial to quickly familiarize yourself with the user interface of RXN for Chemistry.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
+<div class="admonitionblock note">
+<table>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/icons/note.png" alt="Important"></span></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>IBM, the IBM logo, and ibm.com® are trademarks or registered trademarks of IBM Corporation, registered in many jurisdictions worldwide. Other product and service names might be trademarks of IBM or other companies. A current list of IBM trademarks is available on the Web at <a href="https://www.ibm.com/legal/copytrade">Copyright and trademark information</a>.</p>
-</div></div></td>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+IBM, the IBM logo, and ibm.com® are trademarks or registered trademarks of IBM Corporation, registered in many jurisdictions worldwide. Other product and service names might be trademarks of IBM or other companies. A current list of IBM trademarks is available here: <a href="https://www.ibm.com/legal/copyright-trademark">Copyright and Trademark Information</a>.
+</td>
 </tr>
-</tbody>
 </table>
-<div class="sect2">
-<h3 id="_product_overview">Product Overview</h3>
+</div>
+<details>
+<summary class="title"><strong>Product Overview</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Use AI to predict outcomes of chemical reactions for optimized synthesis methods and to predict chemical reactions, retrosynthesis pathways, and experimental procedures. All while securing your data using features of the IBM Discovery Platform.</p>
 </div>
@@ -499,31 +494,44 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_overview_and_prerequisites">Overview and Prerequisites</h3>
+</details>
+<details>
+<summary class="title"><strong>Tutorial Overview and Prerequisites</strong></summary>
+<div class="content">
 <div class="paragraph">
-<p>The purpose of this short tutorial is to introduce you to the user interface for IBM RXN for Chemisty and to walk you through creating a new Project.</p>
+<p>The purpose of this short tutorial is to introduce you to the user interface for RXN for Chemisty and to walk you through creating a new Project.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
+<div class="admonitionblock important">
+<table>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/icons/important.png" alt="Important"></span></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>An account on a SaaS instance of IBM RXN for Chemistry is required to complete this Quick Start.</p>
-</div></div></td>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+An account on a SaaS instance of RXN for Chemistry is required to complete this Quick Start.
+</td>
 </tr>
-</tbody>
 </table>
-<div class="paragraph">
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Number of steps in this Quick Start: <strong>21</strong></p>
+</li>
+<li>
 <p>Estimated time to complete this Quick Start: <strong>15 minutes</strong></p>
+</li>
+</ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_step_1_log_into_ibm_rxn_for_chemistry">Step 1: Log into IBM RXN for Chemistry</h3>
+</details>
+<details>
+<summary class="title"><strong>Start Tutorial</strong></summary>
+<div class="content">
+<hr>
+<details>
+<summary class="title"><strong>Step 1: Log into RXN for Chemistry</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Point your web browser to <a href="https://rxn.app.accelerate.science/" class="bare">https://rxn.app.accelerate.science/</a>, then click on the link in the upper right of the screen labeled ``Get Started''.</p>
 </div>
@@ -531,46 +539,50 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/6db2ceed-f079-45a8-b6ca-5f2853e90b42/user_cropped_screenshot.jpeg?tl_px=211,0&amp;br_px=1931,896&amp;force_format=png&amp;width=1120.0&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=1033,-5" alt="image"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_step_2_select_your_first_time_login_option">Step 2: Select your first-time login option</h3>
+</details>
+<details>
+<summary class="title"><strong>Step 2: Select your first-time login option</strong></summary>
+<div class="content">
 <div class="paragraph">
-<p>If this is your first time using IBM RXN for Chemistry, you have several login options.</p>
+<p>If this is your first time using RXN for Chemistry, you have several login options.</p>
 </div>
 <div class="paragraph">
-<p>You may click on <strong>Sign up</strong> to create login credentials directly on the RXN site. After signing up you may then click on <strong>Log in</strong> to authenticate and access IBM RXN for Chemistry.</p>
+<p>You may click on <strong>Sign up</strong> to create login credentials directly on the RXN site. After signing up you may then click on <strong>Log in</strong> to authenticate and access RXN for Chemistry.</p>
 </div>
 <div class="paragraph">
-<p>Alternatively you may use your login credentials from Google or Facebook to log into IBM RXN for Cheimstry.</p>
+<p>Alternatively you may use your login credentials from Google or Facebook to log into RXN for Cheimstry.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/350f742a-e23a-4b81-aed8-1a533a6f9a24/user_cropped_screenshot.jpeg?tl_px=85,0&amp;br_px=1805,851&amp;force_format=png&amp;width=1120.0" alt="image"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_step_3_add_a_new_project">Step 3: Add a new Project</h3>
+</details>
+<details>
+<summary class="title"><strong>Step 3: Add a new Project</strong></summary>
+<div class="content">
 <div class="paragraph">
-<p>After authenticating successfully you will be taken the the IBM RXN for Chemistry Home view. Click on the button <strong>Add new project</strong> in the upper right of the Home view.</p>
+<p>After authenticating successfully you will be taken the the RXN for Chemistry Home view. Click on the button <strong>Add new project</strong> in the upper right of the Home view.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/c3338555-671a-4b9c-b89f-c59d98425ec6/user_cropped_screenshot.jpeg?tl_px=0,0&amp;br_px=1583,884&amp;force_format=png&amp;width=1120.0&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=1034,-14" alt="image"></span></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
+<div class="admonitionblock tip">
+<table>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/icons/tip.png" alt="Tip"></span></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>The Home view contains access to all of the major functions of IBM RXN for Chemistry. You can return to the home screen anytime by clicking on the link <strong>Home</strong> in the upper left of the web page</p>
-</div></div></td>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The Home view contains access to all of the major functions of RXN for Chemistry. You can return to the home screen anytime by clicking on the link <strong>Home</strong> in the upper left of the web page
+</td>
 </tr>
-</tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="_step_4_name_your_new_project">Step 4: Name your new Project</h3>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 4: Name your new Project</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>In the dialog box that pops up enter a name for your new project. You will be adding reactions to this project in subsequent tutorials.</p>
 </div>
@@ -580,98 +592,97 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/4679537b-69c2-49bd-9516-347c933144a6/user_cropped_screenshot.jpeg?tl_px=79,0&amp;br_px=1226,533&amp;force_format=png&amp;width=1120.0&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=554,386" alt="image"></span></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
+<div class="admonitionblock note">
+<table>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/icons/note.png" alt="Note"></span></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>In the IBM RXN for Chemisty tool, models of molecules and reactions may be organized into <em>projects</em>. Each project may contain several molecular and reaction models, and each project may be accessed and worked on by multiple team members. Each project is access controlled by allowing only specified teams or individuals to access the project resources.</p>
-</div></div></td>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In the RXN for Chemisty tool, models of molecules and reactions may be organized into <em>projects</em>. Each project may contain several molecular and reaction models, and each project may be accessed and worked on by multiple team members. Each project is access controlled by allowing only specified teams or individuals to access the project resources.
+</td>
 </tr>
-</tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="_step_5_view_the_project_dashboard">Step 5: View the Project Dashboard</h3>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 5: View the Project Dashboard</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>You will be taken to the Project Dashboard for your new project. After viewing your project Dashboard, click on the <strong>Home</strong> link on the left hand menu.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/d2bc6eea-f05c-49b5-89a5-95bdc5c04118/user_cropped_screenshot.jpeg?tl_px=0,0&amp;br_px=1719,943&amp;force_format=png&amp;width=1120.0&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=20,20" alt="image"></span></p>
 </div>
-  
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
+<div class="admonitionblock note">
+<table>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/icons/note.png" alt="Note"></span></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>The Project Dashboard page contains a summary of the work and artifacts produced by you and other team members. The information presented shows a summary of all the different models and reactions that have been developed. You have instant access to all of your teams work. There is also a chronological list of <strong>Recent activities</strong> which may be used to track the contributions and work for each team member.</p>
-</div></div></td>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The Project Dashboard page contains a summary of the work and artifacts produced by you and other team members. The information presented shows a summary of all the different models and reactions that have been developed. You have instant access to all of your teams work. There is also a chronological list of <strong>Recent activities</strong> which may be used to track the contributions and work for each team member.
+</td>
 </tr>
-</tbody>
 </table>
-  
 </div>
-<div class="sect2">
-<h3 id="_step_6_go_to_the_projects_view_page">Step 6: Go to the Projects view page</h3>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 6: Go to the Projects view page</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>From the Home view, click on <strong>Projects</strong> in the left hand menu.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/f91cd632-716e-42f9-ab78-492d787fd373/user_cropped_screenshot.jpeg?tl_px=0,0&amp;br_px=859,480&amp;force_format=png&amp;width=860&amp;wat_scale=76&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=58,93" alt="image"></span></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
+<div class="admonitionblock tip">
+<table>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/icons/tip.png" alt="Tip"></span></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>The <strong>Projects</strong> link in the upper left of the Home view will take you to the Projects page, which contains a list of all of the projects you and your team have created with IBM RXN for Chemistry.</p>
-</div></div></td>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The <strong>Projects</strong> link in the upper left of the Home view will take you to the Projects page, which contains a list of all of the projects you and your team have created with RXN for Chemistry.
+</td>
 </tr>
-</tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="_step_7_view_the_project_list">Step 7: View the Project list</h3>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 7: View the Project list</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>After viewing the Project list, click on the <strong>Home</strong> link to return to the Home page.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-22/c1575e40-44df-411a-b2eb-6ba846d5e5b8/user_cropped_screenshot.jpeg?tl_px=0,0&amp;br_px=1075,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=46,48" alt="image"></span></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
+<div class="admonitionblock note">
+<table>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/icons/note.png" alt="Note"></span></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>The Project List contains links to each of your projects. A project consists of the molecular models and the results of all of the chemical reactions simulated with IBM RXN for Chemistry.</p>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Project List contains links to each of your projects. A project consists of the molecular models and the results of all of the chemical reactions simulated with RXN for Chemistry.</p>
 </div>
 <div class="paragraph">
 <p>Clicking on the project Name will take you to the Dashboard for that project.</p>
-</div></div></td>
+</div>
+</td>
 </tr>
-</tbody>
 </table>
 </div>
-  
-<div class="sect2">
-<h3 id="start-the-process-to-predict-retrosynthesis">Step 8: Start the process to Predict retrosynthesis</h2>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 8: Start the process to Predict retrosynthesis</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>From the Home page view, click on <strong>Predict retrosynthesis</strong>.</p>
 </div>
@@ -679,17 +690,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-29/0bae5fd2-cc23-4a9b-9a4e-bec5bbb44f0d/user_cropped_screenshot.jpeg?tl_px=0,9&amp;br_px=859,490&amp;force_format=png&amp;width=860&amp;wat_scale=76&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=362,212" alt="Screenshot of: From the Home page view"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="add-new-model-to-pre-existing-project-or-new-project">Step 9: Add new model to pre-existing project or new project</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 9: Add new model to pre-existing project or new project</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Add to a pre-existing project by selecting <strong>Add to pre-existing project</strong> then selecting the Project name from the drop down list. Or you may create and name a new project by selecting "Add to a brand new project."</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-29/d0861aca-47ce-445b-b7a5-daafa64ef3fa/user_cropped_screenshot.jpeg?tl_px=3,124&amp;br_px=1078,725&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,265" alt="Screenshot of: Add to a pre-existing project by selecting <strong>Add to pre-existing project</strong> then selecting the Project name from the drop down list. Or you may create and name a new project by selecting &quot;Add to a brand new project.&quot;"></span></p>
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-29/d0861aca-47ce-445b-b7a5-daafa64ef3fa/user_cropped_screenshot.jpeg?tl_px=3,124&amp;br_px=1078,725&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,265" alt="Screenshot of: Add to a pre-existing project by selecting &lt;strong&gt;Add to pre-existing project&lt;/strong&gt; then selecting the Project name from the drop down list. Or you may create and name a new project by selecting &quot;Add to a brand new project.&quot;"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="click-on-predict-forward-reaction-to-go-to-chemical-structure-editor">Step 10: Click on Predict forward reaction to go to chemical structure editor</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 10: Click on Predict forward reaction to go to chemical structure editor</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>After selecting a pre-existing project or new project, click on the button <strong>Predict forward reaction</strong></p>
 </div>
@@ -697,49 +712,45 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/b18a366f-49cf-45c3-970f-11ba0625e6db/File.jpeg?tl_px=493,327&amp;br_px=1568,928&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,265" alt="Screenshot of: After selecting a pre-existing project or new project"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="start-building-a-molecule-in-the-visual-editor">Step 11: Start building a molecule in the visual editor</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 11: Start building a molecule in the visual editor</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Click the icon indicated below to add a symbol for a cycloalkene.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/a9822038-6f6f-4ec0-8003-3344fadac0a0/File.jpeg?tl_px=0,0&amp;br_px=1112,878&amp;force_format=png&amp;width=1120.0" alt="Screenshot of: Click the icon indicated below to add a symbol for a cycloalkene."></span></p>
 </div>
-<div class="paragraph">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
+<div class="admonitionblock tip">
+<table>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/icons/tip.png" alt="Note"></span></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>The molecular modeling tool used in IBM RXN for Chemistry is based on the open source tool Ketcher. The tool is very easy to use and you may browse the documentation at this location: <a href="https://github.com/epam/ketcher/blob/v2.12.0/documentation/help.md" class="bare">https://github.com/epam/ketcher/blob/v2.12.0/documentation/help.md</a></p>
-</div></div></td>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The molecular modeling tool used in RXN for Chemistry is based on the open source tool Ketcher. The tool is very easy to use and you may browse the documentation at this location: <a href="https://github.com/epam/ketcher/blob/v2.12.0/documentation/help.md" class="bare">https://github.com/epam/ketcher/blob/v2.12.0/documentation/help.md</a>
+</td>
 </tr>
-</tbody>
 </table>
 </div>
-<div class="paragraph">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
+<div class="admonitionblock note">
+<table>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/icons/important.png" alt="Note"></span></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>This quick start guide is by necessity brief. It will give you the basic knowledge to move forward on your own, but you are highly encouraged to browse the documentation referenced above to learn more.</p>
-</div></div></td>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This quick start guide is by necessity brief. It will give you the basic knowledge to move forward on your own, but you are highly encouraged to browse the documentation referenced above to learn more.
+</td>
 </tr>
-</tbody>
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="select-an-atom-to-add-to-your-molecule">Step 12: Select an atom to add to your molecule</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 12: Select an atom to add to your molecule</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Click on the capital letter "N" (for Nitrogren) located on the right hand side of the screen.</p>
 </div>
@@ -747,8 +758,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/b8fd4680-5376-4e59-ad27-8d0c63e13980/File.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=1012,204" alt="Screenshot of: Click on the capital letter &quot;N&quot; (for Nitrogren) located on the right hand side of the screen."></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="select-the-atom-to-bind-the-new-molecule-to">Step 13: Select the atom to bind the new molecule to</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 13: Select the atom to bind the new molecule to</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Click on any of the carbon atoms in the cycloalkene molecule. A nitrogen atom will be inserted to replace the carbon atom in the ring.</p>
 </div>
@@ -762,8 +775,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/7d07da8a-553c-4e57-b743-1abfb9ab2c69/File.jpeg?tl_px=100,0&amp;br_px=1820,943&amp;force_format=png&amp;width=1120.0" alt="Screenshot of: Carbon ring with nitrogen inserted."></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="select-the-single-bond-to-add-to-your-molecule">Step 14: Select the single bond to add to your molecule</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 14: Select the single bond to add to your molecule</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>On the left hand side of the screen click on the icon indicated below. This is the icon that can be used to add a single bond group to the model you are building.</p>
 </div>
@@ -771,8 +786,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/863c42d2-deab-4bd5-a215-b394edf7a396/File.jpeg?tl_px=0,0&amp;br_px=1075,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=0,220" alt="Screenshot of: On the left hand side of the screen click on the icon indicated below. This is the icon that can be used to add a single bond group to the model you are building."></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="select-the-atom-to-attach-the-new-single-bond">Step 15: Select the atom to attach the new single bond</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 15: Select the atom to attach the new single bond</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Click on any of the carbon atoms in the carbon-nitrogen ring. As shown below an ethane group is attached to the selected carbon.</p>
 </div>
@@ -780,8 +797,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/7422a889-0946-468d-a424-78f5ee6813d1/File.jpeg?tl_px=0,0&amp;br_px=1075,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=272,253" alt="Screenshot of: Click on any of the carbon atoms in the carbon-nitrogen ring. As shown below an ethane group is attached to the selected carbon."></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="clear-the-workspace-with-the-eraser">Step 16: Clear the workspace with the eraser</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 16: Clear the workspace with the eraser</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Now we will clear the workspace for a new molecule. Click on the eraser icon located on the left hand side of the screen.</p>
 </div>
@@ -792,8 +811,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/62952e53-abad-42bb-9317-a92ac48bb8ae/File.jpeg?tl_px=0,0&amp;br_px=1075,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=-9,162" alt="Screenshot of: Now we will clear the workspace for a new molecule. Click on the eraser icon located on the left hand side of the screen. Click in the workspace near the molecule to draw a box surrounding the molecule. Once the area has been selected everything in that box will be deleted upon finishing the box drawing."></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="open-the-smiles-string-editor-to-enter-a-molecule-into-the-workspace">Step 17: Open the SMILES string editor to enter a molecule into the workspace</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 17: Open the SMILES string editor to enter a molecule into the workspace</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Click "Smiles string editor" located above the workspace.</p>
 </div>
@@ -801,8 +822,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/93a5fb06-0ea9-4e22-bc2c-3737a434c9da/File.jpeg?tl_px=397,0&amp;br_px=1472,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,-11" alt="Screenshot of: Click &quot;Smiles string editor&quot; located above the workspace."></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="enter-a-smiles-string-into-the-editor">Step 18: Enter a SMILES string into the editor</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 18: Enter a SMILES string into the editor</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Enter a SMILES string into the text box as shown below. Here is a SMILES string you may copy/paste into the text box. This SMILES string may be copy/pasted into the text editor to predict a forward reaction: Nc1ccccc1.O=C(Cl)Cc1ccccc1</p>
 </div>
@@ -810,8 +833,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/069bace3-5947-433f-957d-031591a86a25/File.jpeg?tl_px=100,0&amp;br_px=1820,943&amp;force_format=png&amp;width=1120.0" alt="Screenshot of: Enter a SMILES string into the text box as shown below. Here is a SMILES string you may copy/paste into the text box. This SMILES string may be copy/pasted into the text editor to predict a forward reaction: Nc1ccccc1.O=C(Cl)Cc1ccccc1"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="check-the-smiles-string-for-validity">Step 19: Check the SMILES string for validity</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 19: Check the SMILES string for validity</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Click "Validate SMILES string".</p>
 </div>
@@ -822,8 +847,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-29/b1d03492-4e93-4a0c-ace9-4b26f6116fb2/user_cropped_screenshot.jpeg?tl_px=0,336&amp;br_px=1075,937&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=370,265" alt="Screenshot of: Click &quot;Validate SMILES string&quot;. A small dialog will appear in the lower left corner of the screen"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="view-the-molecule-in-the-visual-editor">Step 20: View the molecule in the visual editor</h2>
+</details>
+<details>
+<summary class="title"><strong>Step 20: View the molecule in the visual editor</strong></summary>
+<div class="content">
 <div class="paragraph">
 <p>Click "Load in visual editor". You will see your molecule rendered visually in the visual workspace.</p>
 </div>
@@ -831,12 +858,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-28/3e116c57-8513-422a-9128-58ce1ada68c9/File.jpeg?tl_px=532,332&amp;br_px=1607,933&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,265" alt="Screenshot of: Click &quot;Load in visual editor&quot;. You will see your molecule rendered visually in the visual workspace."></span></p>
 </div>
 </div>
-</div>
-  
-<div class="sect2">
-<h3 id="_step_8_tutorial_completed">Step 21: Tutorial completed</h3>
+</details>
+<details>
+<summary class="title"><strong>Step 21: Tutorial completed</strong></summary>
+<div class="content">
 <div class="paragraph">
-<p><strong>This completes the Quick Start tutorial for IBM RXN for Chemistry.</strong></p>
+<p><strong>This completes the Quick Start tutorial for RXN for Chemistry.</strong></p>
 </div>
 <div class="paragraph">
 <p>In this tutorial we covered the following:</p>
@@ -844,7 +871,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Overview of the UI for IBM RXN for Chemistry</p>
+<p>Overview of the UI for RXN for Chemistry</p>
 </li>
 <li>
 <p>Description and creation of projects</p>
@@ -870,16 +897,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
-<div id="footer-text" class="paragraph">
-<p>Last updated 2023-09-29 09:46:51 -0500</p>
 </div>
+</details>
 </div>
-</div>
-</div>
+</details>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-09-29 14:25:57 -0500
+Last updated 2023-10-04 10:07:33 -0500
 </div>
 </div>
 </body>
