@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.15">
-<title>RXN for Chemistry Tutorials</title>
+<title>RXN for Chemistry - Predict product</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment @import statement to use as custom stylesheet */
@@ -441,45 +441,462 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="paragraph">
-<p><a href="https://rxn.app.accelerate.science/rxn/home"><span class="icon"><i class="fa fa-arrow-circle-left fa-2x"></i></span>  Return to RXN for Chemistry Home</a></p>
+<p><a href="index.html"><span class="icon"><i class="fa fa-arrow-circle-left fa-2x"></i></span>  Return to RXN for Chemistry Documentation</a></p>
 </div>
-<h2 id="_rxn_for_chemistry_tutorials" class="discrete">RXN for Chemistry Tutorials</h2>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<tbody>
+<h2 id="_rxn_for_chemistry_predict_product" class="discrete">RXN for Chemistry - Predict product</h2>
+<div class="paragraph">
+<p>This guide is a short tutorial to quickly learn how to use RXN for Chemistry predict forward reactions when starting with a set of known reagents.</p>
+</div>
+<details>
+<summary class="title"><strong>Start Tutorial</strong></summary>
+<div class="content">
+<hr>
+<div class="admonitionblock important">
+<table>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="./quick_start.html">RXN for Chemistry Quick Start</a></p>
-</div>
-<div class="paragraph">
-<p>Jump right in to quickly learn the UI of RXN for Chemistry</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="./predict_retrosynthesis.html">Predict retrosynthesis</a></p>
-</div>
-<div class="paragraph">
-<p>Learn how to predict possible retrosynthetic routes given a target molecule</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="./predict_product.html">Predict product</a></p>
-</div>
-<div class="paragraph">
-<p>Learn about predicting the product of a reaction from its precursors</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="./predict_reagents.html">Predict reagents</a></p>
-</div>
-<div class="paragraph">
-<p>Learn about planning and executing a synthesis starting from a target molecule, a retrosynthetic route, or an experimental procedure in text format</p>
-</div></div></td>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+An account on a SaaS instance of RXN for Chemistry is required to complete this tutorial.
+</td>
 </tr>
-</tbody>
 </table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Number of steps in this tutorial: <strong>nn</strong></p>
+</li>
+<li>
+<p>Estimated time to complete this tutorial: <strong>nn minutes</strong></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<details>
+<summary class="title"><strong>Step 1:</strong> Log into RXN for Chemistry</summary>
+<div class="content">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+See our <a href="./quick_start.html">RXN for Chemistry Quick Start</a> for directions on logging into the RXN for Chemistry system.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 2:</strong> From the Home screen click "Predict product"</summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="./images/predict_product_s2.png" alt="Screenshot of: Click &quot;Predict forward reaction&quot;"></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 3:</strong> Select "Add to pre-existing project" or "Add to a brand new project"</summary>
+<div class="content">
+<div class="paragraph">
+<p>If selecting <strong>Add to pre-existing project</strong> then use the dropdown labeled "Filter" to select the project.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/2b4d8a5e-65d3-4e14-9b54-ec5ffa0fe668/ascreenshot.jpeg?tl_px=422,342&amp;br_px=1497,943&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,370" alt="Screenshot of: Click here."></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 4:</strong> Click "Predict forward reaction"</summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/197c6330-4087-4bf2-b322-d120ca4ea137/ascreenshot.jpeg?tl_px=575,319&amp;br_px=1650,920&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,265" alt="Screenshot of: Click &quot;Predict forward reaction&quot;"></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 5:</strong> In the visual editor, click "Smiles string editor" at the top of the page</summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-06/4587690c-ef42-4c8f-9447-72bb02d3cf8d/ascreenshot.jpeg?tl_px=359,0&amp;br_px=1219,480&amp;force_format=png&amp;width=860&amp;wat_scale=76&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=402,-8" alt="Screenshot of: Click &quot;Smiles string editor&quot;"></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 6:</strong> Copy and paste a SMILES string into the text box.</summary>
+<div class="content">
+<div class="paragraph">
+<p>On this page you will paste a SMILES string representing the reactant molecules to use for the product prediction. Use the one shown below.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>SMILES string for use in product prediction. There are four molecules and one potassium ion in this string:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>CC(C)(C)OC(=O)N1CCCC1[B-](F)(F)F.CN(C)C=O.COC(=O)c1ccc(/C=C/S(=O)(=O)c2ccccc2)cc1.Cc1c(Br)cc2c(-c3ccccc3C(=O)O)c3cc(Br)c(=O)c(Br)c-3oc2c1Br.[K+]</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-06/bc8bdd76-4b07-4911-8f78-57c8da857b4e/ascreenshot.jpeg?tl_px=153,0&amp;br_px=1012,480&amp;force_format=png&amp;width=860&amp;wat_scale=76&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=402,138" alt="Screenshot of: Click this field."></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 7:</strong> Click "Validate string smiles" to validate the structure in the SMILES string</summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-06/a0fe68fc-6385-4263-b26c-0b1f2d31d6a5/ascreenshot.jpeg?tl_px=19,277&amp;br_px=879,758&amp;force_format=png&amp;width=860&amp;wat_scale=76&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=402,216" alt="Screenshot of: Click &quot;Validate string smiles&quot;"></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 8:</strong> Click "Load in visual editor" to view a visual model of the molecules and ion</summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-06/fb98a000-8405-4795-b3fc-c7499bbb9edd/ascreenshot.jpeg?tl_px=439,277&amp;br_px=1299,758&amp;force_format=png&amp;width=860&amp;wat_scale=76&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=402,214" alt="Screenshot of: Click &quot;Load in visual editor&quot;"></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 9:</strong> Click "Run forward reaction prediction" to start the process</summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="./images/predict_product_s8.png" alt="predict_product_s8.png"></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 10:</strong> Select the <strong>2020-08-10</strong> machine learning model then click "Run forward reaction prediction"</summary>
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Specific guidance and documentation for each of the machine learning models listed will be made available in Q4 2023.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/c50e8305-fa85-4de8-8b2b-d393ddf3fb7e/ascreenshot.jpeg?tl_px=629,342&amp;br_px=1704,943&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,276" alt="Screenshot of: Click &quot;Run forward reaction prediction&quot;"></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 11:</strong> After viewing your results, click "Generate more outcomes" to generate more potential products.</summary>
+<div class="content">
+<div class="paragraph">
+<p>Results will be presented in a visual format as show below.  You also have the option of downloading the results as a SMILES string or a PDF file of the molecular models.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The process of generating the first result show below can take anywhere from a few seconds to a few minutes, depending upon the complexity of the reactions.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/20649881-61af-42b1-ad50-0ff3734c6312/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=731,-7" alt="Screenshot of: Click &quot;Generate more outcomes&quot;"></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 12:</strong> The newly predicted products may be viewed via the dropdown list labeled with the project name.</summary>
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The process of generating the first result show below can take anywhere from a few seconds to a few minutes, depending upon the complexity of the reactions.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/025a4667-9063-4ca5-8882-130eb26ca185/ascreenshot.jpeg?tl_px=0,0&amp;br_px=1075,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=260,115" alt="Screenshot of: Click here."></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 13:</strong> After selecting a predicted reaction click the icon for <strong>Predict reaction properties</strong> in upper right</summary>
+<div class="content">
+<div class="paragraph">
+<p>The icon for Predict reaction properties is shown below.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The algorithms for predicting reaction properties take a representation of the reaction (Condensed Graph of Reaction, CGR) and use it as input to a graph-based convolutional neural network.  See this article for an example of this approach: <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.1c00975#" class="bare">https://pubs.acs.org/doi/10.1021/acs.jcim.1c00975#</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/9e75d63b-10ec-4eb2-b16d-d8728a988a71/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=710,51" alt="Screenshot of: Click here."></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 14:</strong> In the dialog box select "atom-mapping-2020" under "AI model" then click <strong>Get prediction</strong></summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/8e86050f-97c4-4b4e-b3aa-02d5fb84c65f/ascreenshot.jpeg?tl_px=553,67&amp;br_px=1628,668&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,265" alt="Screenshot of: Click this dropdown."></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 15:</strong> Click on the the dropdown to view results or <strong>Download results</strong> to download to CSV</summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="images/predict_product_s15.png" alt="predict_product_s15.png"></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 16:</strong> Click on the TMAP icon as shown below</summary>
+<div class="content">
+<div class="paragraph">
+<p>This will take you to a visual TMAP showing your retrosynthesis results in the context of other chemical structures and properties.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>What is a TMAP?</strong></p>
+</div>
+<div class="paragraph">
+<p>TMAP (TreeMAP) is a set of algorithms to help visualize high-dimensional data sets containing chemical structures. It provides the ability to visualize such data while preserving both global and local features with a sufficient level of detail to allow for human inspection and interpretation.</p>
+</div>
+<div class="paragraph">
+<p>For more information on TMAP see the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-0416-x">Journal of Cheminformatics paper on TMAP</a></p>
+</li>
+<li>
+<p><a href="http://tmap.gdb.tools/">Documentation for Python TMAP library</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/805654ba-a2f1-43ba-986f-2fc347896d10/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=770,53" alt="Screenshot of: Click this icon."></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 17:</strong> After reading the TMAP guidance, click "Continue with TMAP"</summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-10/8feddb2e-c133-4240-8ad2-50e15dc87c85/ascreenshot.jpeg?tl_px=305,203&amp;br_px=1380,804&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,457" alt="Screenshot of: Click &quot;Continue with TMAP&quot;"></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 18:</strong> Click on the +/- zoom icons to zoom in and out of TMAP</summary>
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The legend on the right hand side of the TMAP shows you the colors used to represent your reactions most closely related neighbors in the TMAP.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-10/0a72ec90-a723-4b92-b40c-d988e2fc7caf/ascreenshot.jpeg?tl_px=109,203&amp;br_px=1184,804&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=502,517" alt="Screenshot of: Click this icon."></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 19:</strong> Click on the "X" in the upper right of the screen to close the TMAP</summary>
+<div class="content">
+<div class="paragraph">
+<p>After you have finished exploring the TMAP close it to return to the reactions view.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-10/f1613317-902f-480a-a8b8-b17bd50e7e10/ascreenshot.jpeg?tl_px=364,0&amp;br_px=1440,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=1010,-8" alt="Screenshot of: Click here."></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 20:</strong> Click on the icon for "Similar reactions list" as shown below</summary>
+<div class="content">
+<div class="paragraph">
+<p>The Similar reactions list will identify reactions in the RXN database that are similar to the predicted reaction.</p>
+</div>
+<div class="paragraph">
+<p>Click the same icon again to close the Similar reactions list.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/178a63d9-743b-4b7e-94fd-d1520469d03e/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=830,53" alt="Screenshot of: Click this icon."></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 21:</strong> Click on the icon for "Copy fingerprint" as shown below</summary>
+<div class="content">
+<div class="paragraph">
+<p>The reaction fingerprint for the predicted product reaction will be copied to the clipboard of your browser. You may then paste it into a text document.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A unique "fingerprint" for a chemical reaction can be computed and used as a means to compare molecules and reactions for similarity.</p>
+</div>
+<div class="paragraph">
+<p>For more information on fingerprints as used here see the following: <a href="https://www.nature.com/articles/s42256-020-00284-w.epdf?sharing_token=CGHu6tcqBiFmC1nRfnOrxNRgN0jAjWel9jnR3ZoTv0NiJSBmQfyOiLfbwen1TgEszNU5Xao_0Gs7D0u8tLUOJxaLAUc469WZKWG5K9wsqIe98dZOREVhQ33gqcr33AgNUjnp4cVXojp4aKe2xCbWtNaxOZtpOjBOsdX3O8yxVkI%3D">Mapping the space of chemical reactions using attention-based neural networks</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/c365b0bc-e304-47f8-b918-1535a4488a6e/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=892,53" alt="Screenshot of: Click here."></span></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>This is an example of a chemical reaction  fingerprint. It is the fingerprint of the example prediction used in this tutorial.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>[-1.6735221147537231,-1.8661422729492188,-1.81363844871521,-0.42113983631134033,0.8483024835586548,-1.4488575458526611,-0.3686295449733734,0.48501721024513245,-0.4201167821884155,0.7862669229507446,1.6044626235961914,1.9873979091644287,-0.6177471876144409,-1.3560351133346558,0.8070701360702515,1.600415825843811,2.0789148807525635,1.0853002071380615,-1.16912841796875,1.8132174015045166,-0.04413942992687225,-1.5996822118759155,1.5000373125076294,-2.158449172973633,-0.043316882103681564,0.6088337898254395,-2.3338332176208496,0.26505646109580994,-0.6696520447731018,0.18725325167179108,-1.8624275922775269,0.2769564390182495,-1.665277123451233,0.6663358807563782,0.9145832061767578,0.8559666275978088,-0.28232306241989136,2.012446403503418,0.7017057538032532,-0.20654496550559998,-0.9641878008842468,0.6031150817871094,2.5843288898468018,0.05475091561675072,0.16606159508228302,-0.7218376398086548,-1.1366875171661377,-0.1451134979724884,1.0618172883987427,-2.5014426708221436,-0.9198063015937805,-1.2385824918746948,-1.9134392738342285,1.3107930421829224,-0.4073719382286072,0.6758602261543274,-0.24437646567821503,0.23337365686893463,0.4276561439037323,-2.0148684978485107,0.15300783514976501,0.24463608860969543,1.647057294845581,1.000285267829895,-2.3709778785705566,-2.2312567234039307,-0.23227889835834503,-0.9871393442153931,-0.0332455113530159,1.4668725728988647,0.21972636878490448,0.40992364287376404,0.8064353466033936,-1.5371326208114624,1.3094781637191772,1.1358438730239868,1.990492343902588,0.583197295665741,1.4765615463256836,-1.9212021827697754,1.8876357078552246,-0.9314133524894714,0.9261294007301331,-0.9328246116638184,-2.023683547973633,0.5802607536315918,1.6187268495559692,-1.1474950313568115,-1.4451885223388672,-0.6014682054519653,2.982538938522339,-1.2691913843154907,2.520561695098877,0.3426623046398163,0.45115330815315247,-1.2578530311584473,0.9584701657295227,-0.4342820346355438,1.8066455125808716,-0.2416236251592636,-1.919986367225647,-0.4358331561088562,-0.22032895684242249,-0.48406532406806946,-1.5424023866653442,-0.5284754037857056,-0.41207802295684814,0.6387926340103149,1.5004230737686157,-0.46045300364494324,-0.295758455991745,-1.4000827074050903,2.247321367263794,-0.16716280579566956,0.35531893372535706,1.403519868850708,2.022871732711792,-0.9577924013137817,-1.4963902235031128,-0.6279836297035217,1.521104335784912,1.694411039352417,0.9639431834220886,0.817285418510437,-0.37822556495666504,-0.4834178686141968,-2.0221869945526123,0.25094929337501526,0.6673620343208313,-0.7312247157096863,-0.08003901690244675,-0.9209358096122742,-1.050477385520935,0.15671633183956146,-1.3165003061294556,0.49190762639045715,0.6970290541648865,-0.7401221990585327,-1.9508565664291382,-0.06427758187055588,-0.3380867838859558,-3.0102744102478027,0.1726202666759491,-0.7045319080352783,1.016224980354309,-1.933265209197998,0.49109789729118347,0.9653928875923157,-1.1889824867248535,-1.1172419786453247,-0.8418462872505188,2.8990540504455566,0.17563675343990326,0.3059397041797638,0.8853565454483032,2.375370740890503,-1.5038506984710693,1.3053393363952637,2.7178006172180176,0.025221142917871475,0.7661250829696655,0.8579445481300354,-1.7825069427490234,-0.061436738818883896,1.7058143615722656,-0.679970920085907,0.7506396174430847,-0.46935972571372986,0.52462238073349,-0.02844817191362381,-0.4783799350261688,1.4757037162780762,2.03218936920166,-1.2990103960037231,2.2932684421539307,0.7963569760322571,1.37050199508667,-1.4677737951278687,-1.2829804420471191,1.245859980583191,-1.6395522356033325,1.849403738975525,0.6918516159057617,-1.7216944694519043,1.243910312652588,2.095116376876831,0.857475996017456,-1.9396564960479736,2.579957962036133,0.9238468408584595,1.989099144935608,-1.0537619590759277,-2.0923664569854736,0.2938729524612427,1.5466368198394775,-1.5715738534927368,-1.1522927284240723,-4.446835041046143,-0.19612669944763184,0.7210275530815125,-2.6536903381347656,0.8428071141242981,0.6317269802093506,-0.5896157622337341,0.2165938764810562,-0.4859275817871094,-0.5935143232345581,-0.10690609365701675,0.09114240109920502,-0.7064465880393982,-1.164090871810913,-1.0682263374328613,1.7902114391326904,-0.6769233345985413,-0.04595673829317093,0.2578873336315155,-2.1300554275512695,-1.3884824514389038,-1.9772262573242188,0.41490432620048523,-2.239422559738159,-2.1128203868865967,-1.1498372554779053,0.14713731408119202,-1.645789384841919,-0.3932664692401886,0.21344704926013947,-0.2262546271085739,1.3906936645507812,1.2502527236938477,-1.8673160076141357,1.4302036762237549,-0.38463717699050903,3.1459286212921143,2.592770576477051,2.7141170501708984,1.7206215858459473,-0.254597932100296,0.08853600919246674,0.5446722507476807,-1.540218710899353,0.631365954875946,0.6449835896492004,-1.7046161890029907,0.827869713306427,1.0190151929855347,-0.17432191967964172,1.2357866764068604,1.4040271043777466,0.01728861592710018,0.9723564386367798,-0.9273874163627625,-2.049819231033325,0.5417112708091736,-0.15818624198436737,0.3782133460044861]</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 22:</strong> Click on the icon for "Attention weights" as shown below</summary>
+<div class="content">
+<div class="paragraph">
+<p>A small box will open with a heat map of attention weights calculated when the product prediction was derived.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/c35e493e-7c15-47bf-adf6-7a42cc101bc7/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=953,48" alt="Screenshot of: Click this icon."></span></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Right-click on the heat map and select "Open image in new tab" for a higher resolution view.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The attention weight heat map is derived from the attention weights calculated while RXN is generating predictions. Attention weights reflect the molecular interactions in the reaction that were most critical when predicting the product (Y-axis of the heat map) from the reactants (X-axis of the heat map).</p>
+</div>
+<div class="paragraph">
+<p>The following article provides a simple overview of attention in machine learning models: <a href="https://medium.com/analytics-vidhya/understanding-attention-in-transformers-models-57bada0cce3e#:~:text=Steps%20to%20calculating%20Attention&amp;text=Take%20the%20query%20vector%20for,attention%20score%20or%20attention%20weight%20.">Understanding Attention In Transformers Models</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 23:</strong> Click the "X" in the upper right to return to the RXN for Chemistry Home page</summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-10-12/a350be11-00b9-433f-a439-526d6fee12a3/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;wat_scale=95&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=1007,-11" alt="Screenshot of: Click this icon."></span></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title"><strong>Step 24:</strong> Tutorial completed</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong>This completes the Predict product tutorial for RXN for Chemistry.</strong></p>
+</div>
+<div class="paragraph">
+<p>In this tutorial we covered the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Executing a product prediction</p>
+</li>
+<li>
+<p>Viewing the results in a Project</p>
+</li>
+<li>
+<p>Viewing the details of the predicted product reactions</p>
+</li>
+<li>
+<p>Viewing the TreeMAP, fingerprint, and attention heat map of the predicted product reactions</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</div>
+</details>
 </div>
 </body>
 </html>
